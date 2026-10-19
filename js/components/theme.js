@@ -7,7 +7,7 @@ function apply(theme) {
 }
 
 export function initTheme(button) {
-  const preferred = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  const preferred = "dark";
   let theme = load(KEY, preferred);
   apply(theme);
 

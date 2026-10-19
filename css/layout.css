@@ -16,7 +16,8 @@
   gap: 1rem;
   height: var(--header-h);
   padding-inline: 4%;
-  background: var(--surface);
+  background: rgba(10, 10, 12, 0.72);
+  backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -58,7 +59,10 @@
 
 .hero {
   padding: 5rem 0 4rem;
-  background: linear-gradient(160deg, var(--bg-alt), var(--bg));
+  background:
+    radial-gradient(600px 300px at 15% 0%, rgba(255, 77, 109, 0.22), transparent 70%),
+    radial-gradient(500px 300px at 90% 20%, rgba(126, 87, 194, 0.18), transparent 70%),
+    var(--bg);
 }
 
 .hero-actions {
