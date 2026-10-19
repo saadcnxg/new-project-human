@@ -7,29 +7,6 @@
   margin-bottom: 0.6rem;
 }
 
-.hanko {
-  display: inline-grid;
-  place-items: center;
-  width: 1.7rem;
-  height: 1.7rem;
-  background: var(--primary);
-  color: var(--primary-text);
-  font-family: var(--font-serif);
-  font-size: 1rem;
-  line-height: 1;
-  border-radius: 2px;
-}
-
-.jp {
-  display: block;
-  margin-top: 0.3rem;
-  font-family: var(--font-serif);
-  font-size: 0.85rem;
-  font-weight: 400;
-  letter-spacing: 0.3em;
-  color: var(--primary);
-}
-
 .lead {
   font-size: 1.15rem;
   color: var(--muted);
@@ -47,17 +24,16 @@
 
 .btn {
   display: inline-block;
-  padding: 0.7rem 1.3rem;
-  border-radius: 2px;
-  letter-spacing: 0.1em;
-  border: 2px solid transparent;
-  font-weight: 700;
+  padding: 0.65rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-weight: 600;
   text-decoration: none;
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .btn-primary {
@@ -65,10 +41,18 @@
   color: var(--primary-text);
 }
 
+.btn-primary:hover {
+  filter: brightness(1.08);
+}
+
 .btn-ghost {
   background: transparent;
   color: var(--text);
   border-color: var(--border);
+}
+
+.btn-ghost:hover {
+  background: var(--bg-alt);
 }
 
 .stats {
@@ -81,16 +65,17 @@
 }
 
 .stat {
-  border-left: 2px solid var(--primary);
-  padding: 0.2rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.3rem;
   min-width: 140px;
 }
 
 .stat strong {
   display: block;
-  font-family: var(--font-serif);
   font-size: 1.6rem;
-  color: var(--indigo);
+  color: var(--primary);
 }
 
 .stat span {
@@ -106,25 +91,25 @@
   background: var(--surface);
   color: var(--text);
   border: 1px solid var(--border);
-  border-top: 2px solid var(--accent, var(--primary));
   border-radius: var(--radius);
-  padding: 1.6rem;
+  padding: 1.3rem;
   box-shadow: var(--shadow);
-  transition: transform 0.4s ease, border-color 0.4s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-3px);
-  border-color: var(--accent, var(--primary));
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
 }
 
 .card-icon {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .card h3 {
   margin: 0;
-  font-family: var(--font-serif);
+  font-size: 1.15rem;
 }
 
 .card p {
@@ -135,19 +120,25 @@
 
 .card-link {
   margin-top: auto;
-  font-weight: 700;
-  color: var(--accent, var(--primary));
+  font-weight: 600;
+  color: var(--primary);
 }
 
 .input {
   width: 100%;
-  padding: 0.9rem 1.1rem;
+  padding: 0.85rem 1rem;
   font: inherit;
   color: var(--text);
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid var(--text);
-  border-radius: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
 .results {
@@ -164,9 +155,14 @@
   background: var(--surface);
   color: var(--text);
   border: 1px solid var(--border);
-  border-left: 5px solid var(--accent, var(--primary));
-  border-radius: 2px;
+  border-radius: 8px;
   padding: 0.8rem 1rem;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.result-btn:hover {
+  border-color: var(--primary);
+  background: var(--bg-alt);
 }
 
 .result-btn strong {
@@ -184,16 +180,16 @@
 .modal {
   width: min(640px, 94%);
   max-height: 88vh;
-  padding: 2.5rem;
-  border: 1px solid var(--border);
+  padding: 2rem;
+  border: none;
   border-radius: var(--radius);
   background: var(--surface);
   color: var(--text);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-lg);
 }
 
 .modal::backdrop {
-  background: rgba(20, 16, 12, 0.55);
+  background: rgba(15, 23, 42, 0.55);
 }
 
 .modal-close {
@@ -208,11 +204,16 @@
   border-radius: 50%;
   background: var(--bg-alt);
   color: var(--text);
+  transition: background 0.15s ease;
+}
+
+.modal-close:hover {
+  background: var(--border);
 }
 
 .modal h2 {
-  border-bottom: 1px solid var(--accent, var(--primary));
-  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.5rem;
 }
 
 .organ-list {

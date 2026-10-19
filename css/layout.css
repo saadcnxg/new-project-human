@@ -25,15 +25,10 @@
 }
 
 .brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-family: var(--font-serif);
-  font-weight: 600;
+  font-weight: 800;
   font-size: 1.3rem;
-  letter-spacing: 0.12em;
   text-decoration: none;
-  color: var(--text);
+  color: var(--primary);
   margin-right: auto;
 }
 
@@ -45,9 +40,7 @@
 .main-nav a {
   text-decoration: none;
   color: var(--text);
-  font-weight: 500;
-  font-size: 0.9rem;
-  letter-spacing: 0.12em;
+  font-weight: 600;
 }
 
 .main-nav a:hover {
@@ -64,30 +57,8 @@
 }
 
 .hero {
-  padding: 7rem 0 6rem;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  overflow: hidden;
-}
-
-.hero .container {
-  position: relative;
-  z-index: 0;
-}
-
-.hero-kanji {
-  position: absolute;
-  top: -2rem;
-  right: 0;
-  z-index: -1;
-  writing-mode: vertical-rl;
-  font-family: var(--font-serif);
-  font-size: clamp(4rem, 12vw, 9rem);
-  letter-spacing: 0.2em;
-  line-height: 1;
-  color: var(--border);
-  pointer-events: none;
-  user-select: none;
+  padding: 5rem 0 4rem;
+  background: var(--bg-alt);
 }
 
 .hero-actions {
@@ -98,18 +69,17 @@
 }
 
 .section {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 
 .section-alt {
-  border-block: 1px solid var(--border);
   background: var(--bg-alt);
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.6rem;
+  gap: 1.2rem;
 }
 
 .site-footer {
