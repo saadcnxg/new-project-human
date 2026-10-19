@@ -7,6 +7,29 @@
   margin-bottom: 0.6rem;
 }
 
+.hanko {
+  display: inline-grid;
+  place-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  background: var(--primary);
+  color: var(--primary-text);
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1;
+  border-radius: 2px;
+}
+
+.jp {
+  display: block;
+  margin-top: 0.3rem;
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  color: var(--primary);
+}
+
 .lead {
   font-size: 1.15rem;
   color: var(--muted);
@@ -25,11 +48,12 @@
 .btn {
   display: inline-block;
   padding: 0.7rem 1.3rem;
-  border-radius: 999px;
+  border-radius: 2px;
+  letter-spacing: 0.1em;
   border: 2px solid transparent;
   font-weight: 700;
   text-decoration: none;
-  transition: transform 0.15s ease, opacity 0.15s ease;
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .btn:hover {
@@ -57,17 +81,16 @@
 }
 
 .stat {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.9rem 1.3rem;
+  border-left: 2px solid var(--primary);
+  padding: 0.2rem 1.2rem;
   min-width: 140px;
 }
 
 .stat strong {
   display: block;
+  font-family: var(--font-serif);
   font-size: 1.6rem;
-  color: var(--primary);
+  color: var(--indigo);
 }
 
 .stat span {
@@ -83,18 +106,16 @@
   background: var(--surface);
   color: var(--text);
   border: 1px solid var(--border);
-  border-top: 1px solid var(--border);
-  background-image: linear-gradient(180deg, color-mix(in srgb, var(--accent, var(--primary)) 20%, transparent), transparent 60%);
+  border-top: 2px solid var(--accent, var(--primary));
   border-radius: var(--radius);
-  padding: 1.3rem;
+  padding: 1.6rem;
   box-shadow: var(--shadow);
-  transition: transform 0.2s ease;
+  transition: transform 0.4s ease, border-color 0.4s ease;
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   border-color: var(--accent, var(--primary));
-  box-shadow: 0 0 28px color-mix(in srgb, var(--accent, var(--primary)) 35%, transparent);
 }
 
 .card-icon {
@@ -103,6 +124,7 @@
 
 .card h3 {
   margin: 0;
+  font-family: var(--font-serif);
 }
 
 .card p {
@@ -122,9 +144,10 @@
   padding: 0.9rem 1.1rem;
   font: inherit;
   color: var(--text);
-  background: var(--surface);
-  border: 2px solid var(--border);
-  border-radius: 12px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--text);
+  border-radius: 0;
 }
 
 .results {
@@ -142,7 +165,7 @@
   color: var(--text);
   border: 1px solid var(--border);
   border-left: 5px solid var(--accent, var(--primary));
-  border-radius: 10px;
+  border-radius: 2px;
   padding: 0.8rem 1rem;
 }
 
@@ -161,8 +184,8 @@
 .modal {
   width: min(640px, 94%);
   max-height: 88vh;
-  padding: 2rem;
-  border: none;
+  padding: 2.5rem;
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--surface);
   color: var(--text);
@@ -170,7 +193,7 @@
 }
 
 .modal::backdrop {
-  background: rgba(8, 12, 20, 0.6);
+  background: rgba(20, 16, 12, 0.55);
 }
 
 .modal-close {
@@ -188,7 +211,7 @@
 }
 
 .modal h2 {
-  border-bottom: 4px solid var(--accent, var(--primary));
+  border-bottom: 1px solid var(--accent, var(--primary));
   padding-bottom: 0.4rem;
 }
 

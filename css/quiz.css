@@ -24,7 +24,7 @@
   background: var(--bg);
   color: var(--text);
   border: 2px solid var(--border);
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 .quiz-option:hover:not(:disabled) {
@@ -32,13 +32,13 @@
 }
 
 .quiz-option.correct {
-  border-color: #1e9e5a;
-  background: rgba(30, 158, 90, 0.15);
+  border-color: #5b8a52;
+  background: rgba(91, 138, 82, 0.15);
 }
 
 .quiz-option.wrong {
-  border-color: #d93a3a;
-  background: rgba(217, 58, 58, 0.15);
+  border-color: var(--primary);
+  background: rgba(184, 50, 39, 0.12);
 }
 
 .quiz-feedback {
@@ -47,8 +47,14 @@
 }
 
 .quiz-score {
+  display: inline-block;
+  font-family: var(--font-serif);
   font-size: 2.4rem;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--primary);
-  margin: 0.4rem 0;
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  padding: 0.2rem 1rem;
+  margin: 0.8rem 0;
+  transform: rotate(-3deg);
 }

@@ -1,38 +1,29 @@
 :root {
-  --bg: #000000;
-  --bg-alt: #0a0a0c;
-  --surface: #111114;
-  --text: #f5f5f7;
-  --muted: #8e8e99;
-  --border: #23232a;
-  --primary: #ff4d6d;
-  --primary-text: #0a0a0a;
-  --shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
-  --radius: 18px;
-  --font: "Inter", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --bg: #f4efe6;
+  --bg-alt: #ece5d8;
+  --surface: #faf6ee;
+  --text: #2a2724;
+  --muted: #6e675d;
+  --border: #d9d0bf;
+  --primary: #b83227;
+  --primary-text: #faf6ee;
+  --indigo: #2b4c6f;
+  --shadow: 0 1px 0 rgba(42, 39, 36, 0.06);
+  --radius: 4px;
+  --font: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --font-serif: "Shippori Mincho", "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
   --header-h: 64px;
 }
 
 [data-theme="dark"] {
-  --bg: #000000;
-  --bg-alt: #0a0a0c;
-  --surface: #111114;
-  --text: #f5f5f7;
-  --muted: #8e8e99;
-  --border: #23232a;
-  --primary: #ff4d6d;
-  --primary-text: #0a0a0a;
-  --shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
-}
-
-[data-theme="light"] {
-  --bg: #f7f9fc;
-  --bg-alt: #eaf0f8;
-  --surface: #ffffff;
-  --text: #1b2433;
-  --muted: #5b6678;
-  --border: #d6deea;
-  --primary: #c8283d;
-  --primary-text: #ffffff;
-  --shadow: 0 6px 20px rgba(20, 30, 50, 0.08);
+  --bg: #14120f;
+  --bg-alt: #1b1815;
+  --surface: #211d19;
+  --text: #ece5d8;
+  --muted: #a39b8c;
+  --border: #36302a;
+  --primary: #e0584b;
+  --primary-text: #14120f;
+  --indigo: #8fb0d6;
+  --shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }

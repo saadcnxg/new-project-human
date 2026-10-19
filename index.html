@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Explore the major systems of the human body, their organs, and test your knowledge.">
   <title>Anatomica | Human Body Anatomy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -13,7 +16,7 @@
 </head>
 <body>
   <header class="site-header" id="siteHeader">
-    <a class="brand" href="#top">Anatomica</a>
+    <a class="brand" href="#top"><span class="hanko" lang="ja" aria-hidden="true">人</span>Anatomica</a>
     <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
     <nav class="main-nav" id="mainNav" aria-label="Main">
       <a href="#systems">Systems</a>
@@ -27,7 +30,8 @@
   <main id="top">
     <section class="hero">
       <div class="container">
-        <p class="eyebrow">Human Anatomy Guide</p>
+        <span class="hero-kanji" lang="ja" aria-hidden="true">人体</span>
+        <p class="eyebrow">Human Anatomy Guide · <span lang="ja">人体解剖ガイド</span></p>
         <h1>Discover how your body works</h1>
         <p class="lead">From 206 bones to roughly 37 trillion cells, explore the systems that keep you alive, moving, and thinking.</p>
         <div class="hero-actions">
@@ -40,7 +44,7 @@
 
     <section class="section" id="systems">
       <div class="container">
-        <h2 class="section-title">Body systems</h2>
+        <h2 class="section-title">Body systems<span class="jp" lang="ja">人体の系統</span></h2>
         <p class="section-sub">Select a system to learn about its organs and key facts.</p>
         <div class="grid" id="systemGrid"></div>
       </div>
@@ -48,7 +52,7 @@
 
     <section class="section section-alt" id="explore">
       <div class="container">
-        <h2 class="section-title">Search organs</h2>
+        <h2 class="section-title">Search organs<span class="jp" lang="ja">器官を探す</span></h2>
         <p class="section-sub">Type an organ or keyword, such as heart, lungs, or nerve.</p>
         <label class="sr-only" for="searchInput">Search organs</label>
         <input class="input" id="searchInput" type="search" placeholder="Search organs..." autocomplete="off">
@@ -58,7 +62,7 @@
 
     <section class="section" id="quiz">
       <div class="container">
-        <h2 class="section-title">Test your knowledge</h2>
+        <h2 class="section-title">Test your knowledge<span class="jp" lang="ja">クイズ</span></h2>
         <p class="section-sub">Answer a short quiz about the human body.</p>
         <div class="quiz" id="quizRoot"></div>
       </div>
@@ -66,7 +70,7 @@
 
     <section class="section section-alt" id="about">
       <div class="container narrow">
-        <h2 class="section-title">About</h2>
+        <h2 class="section-title">About<span class="jp" lang="ja">概要</span></h2>
         <p>Anatomica is an educational project introducing the main systems of the human body. The content is simplified for learners and is not medical advice.</p>
       </div>
     </section>
