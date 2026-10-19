@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the major systems of the human body, their organs, and test your knowledge.">
+  <title>Anatomica | Human Body Anatomy</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top">Anatomica</a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <a href="#systems">Systems</a>
+      <a href="#explore">Explore</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="btn btn-ghost" id="themeToggle" type="button">Theme</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Human Anatomy Guide</p>
+        <h1>Discover how your body works</h1>
+        <p class="lead">From 206 bones to roughly 37 trillion cells, explore the systems that keep you alive, moving, and thinking.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#systems">Explore systems</a>
+          <a class="btn btn-ghost" href="#quiz">Take the quiz</a>
+        </div>
+        <ul class="stats" id="heroStats"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="systems">
+      <div class="container">
+        <h2 class="section-title">Body systems</h2>
+        <p class="section-sub">Select a system to learn about its organs and key facts.</p>
+        <div class="grid" id="systemGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="explore">
+      <div class="container">
+        <h2 class="section-title">Search organs</h2>
+        <p class="section-sub">Type an organ or keyword, such as heart, lungs, or nerve.</p>
+        <label class="sr-only" for="searchInput">Search organs</label>
+        <input class="input" id="searchInput" type="search" placeholder="Search organs..." autocomplete="off">
+        <ul class="results" id="searchResults" aria-live="polite"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="quiz">
+      <div class="container">
+        <h2 class="section-title">Test your knowledge</h2>
+        <p class="section-sub">Answer a short quiz about the human body.</p>
+        <div class="quiz" id="quizRoot"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="about">
+      <div class="container narrow">
+        <h2 class="section-title">About</h2>
+        <p>Anatomica is an educational project introducing the main systems of the human body. The content is simplified for learners and is not medical advice.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Anatomica. For education only.</p>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="systemModal" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close">&times;</button>
+    <div id="modalBody"></div>
+  </dialog>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
