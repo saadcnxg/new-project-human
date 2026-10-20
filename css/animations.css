@@ -1,9 +1,45 @@
-@keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:none} }
-@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
-.hero h1, .hero p, .hero-buttons, .hero-stats { animation:fadeUp .8s ease both; }
-.hero p { animation-delay:.15s; }
-.hero-buttons { animation-delay:.3s; }
-.hero-stats { animation-delay:.45s; }
-.card { animation:fadeUp .6s ease both; }
-.card-icon { animation:float 4s ease-in-out infinite; }
-@media (prefers-reduced-motion:reduce){ *{animation:none!important;transition:none!important} }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.hero h1,
+.hero p,
+.hero-buttons,
+.hero-stats,
+.page-header h1,
+.page-header p,
+.system-hero .emoji,
+.system-hero h1,
+.system-hero p {
+  animation: fadeUp .8s var(--ease) both;
+}
+
+.hero p,
+.page-header p,
+.system-hero p { animation-delay: .12s; }
+
+.hero-buttons { animation-delay: .24s; }
+.hero-stats   { animation-delay: .36s; }
+
+.card { animation: fadeUp .7s var(--ease) both; }
+
+.card:nth-child(1)  { animation-delay: .05s; }
+.card:nth-child(2)  { animation-delay: .10s; }
+.card:nth-child(3)  { animation-delay: .15s; }
+.card:nth-child(4)  { animation-delay: .20s; }
+.card:nth-child(5)  { animation-delay: .25s; }
+.card:nth-child(6)  { animation-delay: .30s; }
+.card:nth-child(7)  { animation-delay: .35s; }
+.card:nth-child(8)  { animation-delay: .40s; }
+.card:nth-child(9)  { animation-delay: .45s; }
+.card:nth-child(10) { animation-delay: .50s; }
+.card:nth-child(11) { animation-delay: .55s; }
+.card:nth-child(12) { animation-delay: .60s; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

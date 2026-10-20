@@ -1,11 +1,72 @@
-@media (max-width:768px){
-  .hamburger { display:block; margin-left:auto; }
-  .nav-links { display:none; flex-direction:column; width:100%; margin-top:1rem; gap:.5rem; }
-  .nav-links.open { display:flex; }
-  .search-box { order:3; width:100%; }
-  .search-box input { width:100%; }
-  .hero { padding:3rem 1.2rem 2rem; }
-  .hero-stats { gap:1.5rem; }
-  .section { padding:3rem 1.2rem; }
-  .footer-grid { grid-template-columns:1fr; }
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 4.5rem 2rem 3.5rem;
+    row-gap: 2rem;
+  }
+  .hero h1,
+  .hero p,
+  .hero-buttons,
+  .hero-stats {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .hero-stats {
+    border-left: none;
+    border-top: 1px solid var(--line);
+    padding: 2rem 0 0;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger { display: block; margin-left: auto; }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    gap: .25rem;
+    border-top: 1px solid var(--line);
+    padding-top: 1rem;
+    order: 3;
+  }
+  .nav-links.open { display: flex; }
+
+  .nav-links a {
+    padding: .7rem 0;
+    border-bottom: none;
+    letter-spacing: .16em;
+  }
+  .nav-links a.active { color: var(--beni); }
+
+  .search-box { order: 4; width: 100%; margin-top: .5rem; }
+  .search-box input { width: 100%; }
+
+  .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem 1rem; }
+
+  .section { padding: 3.5rem 1.25rem; }
+
+  .page-header { padding: 3.5rem 1.25rem 3rem; }
+  .system-hero { padding: 3.5rem 1.25rem 3rem; }
+  .system-body { padding: 2.5rem 1.25rem 3.5rem; }
+
+  .footer { padding: 3rem 1.25rem 1.25rem; }
+  .footer-grid { grid-template-columns: 1fr; }
+
+  .card-sm { aspect-ratio: 3 / 2; }
+}
+
+@media (max-width: 560px) {
+  .navbar { padding: 1rem 1.25rem; }
+
+  .hero { padding: 3.5rem 1.25rem 2.5rem; }
+  .hero-stats { grid-template-columns: 1fr 1fr; }
+  .stat h3 { font-size: 1.6rem; }
+
+  .key-facts { grid-template-columns: 1fr 1fr; }
+
+  .contact-form { padding: 1.75rem; }
 }
