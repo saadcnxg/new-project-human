@@ -1,72 +1,65 @@
-@media (max-width: 1024px) {
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 4.5rem 2rem 3.5rem;
-    row-gap: 2rem;
-  }
-  .hero h1,
-  .hero p,
-  .hero-buttons,
-  .hero-stats {
-    grid-column: 1;
-    grid-row: auto;
-  }
-  .hero-stats {
-    border-left: none;
-    border-top: 1px solid var(--line);
-    padding: 2rem 0 0;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 100%;
-  }
-}
-
 @media (max-width: 768px) {
-  .hamburger { display: block; margin-left: auto; }
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
 
   .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
     margin-top: 1rem;
-    gap: .25rem;
-    border-top: 1px solid var(--line);
-    padding-top: 1rem;
+    gap: 0.5rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .search-box {
     order: 3;
+    width: 100%;
   }
-  .nav-links.open { display: flex; }
 
-  .nav-links a {
-    padding: .7rem 0;
-    border-bottom: none;
-    letter-spacing: .16em;
+  .search-box input {
+    width: 100%;
   }
-  .nav-links a.active { color: var(--beni); }
 
-  .search-box { order: 4; width: 100%; margin-top: .5rem; }
-  .search-box input { width: 100%; }
+  .hero {
+    padding: 4rem 1.2rem 2.5rem;
+  }
 
-  .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem 1rem; }
+  .hero-stats {
+    gap: 1.5rem;
+  }
 
-  .section { padding: 3.5rem 1.25rem; }
+  .section {
+    padding: 3rem 1.2rem;
+  }
 
-  .page-header { padding: 3.5rem 1.25rem 3rem; }
-  .system-hero { padding: 3.5rem 1.25rem 3rem; }
-  .system-body { padding: 2.5rem 1.25rem 3.5rem; }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
 
-  .footer { padding: 3rem 1.25rem 1.25rem; }
-  .footer-grid { grid-template-columns: 1fr; }
-
-  .card-sm { aspect-ratio: 3 / 2; }
+  .section-title {
+    font-size: 1.6rem;
+  }
 }
 
-@media (max-width: 560px) {
-  .navbar { padding: 1rem 1.25rem; }
+@media (max-width: 500px) {
+  .hero-cloud {
+    display: none;
+  }
 
-  .hero { padding: 3.5rem 1.25rem 2.5rem; }
-  .hero-stats { grid-template-columns: 1fr 1fr; }
-  .stat h3 { font-size: 1.6rem; }
+  .hero {
+    padding: 3rem 1rem 2rem;
+  }
 
-  .key-facts { grid-template-columns: 1fr 1fr; }
+  .hero-stats {
+    gap: 1rem;
+  }
 
-  .contact-form { padding: 1.75rem; }
+  .stat h3 {
+    font-size: 1.5rem;
+  }
 }
