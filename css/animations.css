@@ -1,0 +1,9 @@
+@keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:none} }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+.hero h1, .hero p, .hero-buttons, .hero-stats { animation:fadeUp .8s ease both; }
+.hero p { animation-delay:.15s; }
+.hero-buttons { animation-delay:.3s; }
+.hero-stats { animation-delay:.45s; }
+.card { animation:fadeUp .6s ease both; }
+.card-icon { animation:float 4s ease-in-out infinite; }
+@media (prefers-reduced-motion:reduce){ *{animation:none!important;transition:none!important} }

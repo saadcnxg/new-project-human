@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Human Body Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🫀 Human<span>Body</span></div>
+    <button class="hamburger" id="hamburger">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="systems.html">Systems</a></li>
+      <li><a href="organs.html">Organs</a></li>
+      <li><a href="health.html">Health</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-header">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you</p>
+  </section>
+
+  <section class="section">
+    <div class="content-wrap">
+      <form class="contact-form" onsubmit="event.preventDefault(); this.reset(); alert('Thanks! Message sent.');">
+        <label>Name<input type="text" required placeholder="Your name"></label>
+        <label>Email<input type="email" required placeholder="you@example.com"></label>
+        <label>Subject<input type="text" required placeholder="How can we help?"></label>
+        <label>Message<textarea rows="6" required placeholder="Your message..."></textarea></label>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="footer-bottom">© 2025 Human Body Explorer. Educational purposes only.</div></footer>
+  <script src="js/navigation.js"></script>
+</body>
+</html>

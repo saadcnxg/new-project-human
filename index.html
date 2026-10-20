@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Human Body Explorer — Discover Yourself</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🫀 Human<span>Body</span></div>
+    <button class="hamburger" id="hamburger">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="systems.html">Systems</a></li>
+      <li><a href="organs.html">Organs</a></li>
+      <li><a href="health.html">Health</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search...">
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>The Amazing <span>Human Body</span></h1>
+    <p>37 trillion cells. 206 bones. 1 incredible machine. Explore every system, organ, and secret of your body.</p>
+    <div class="hero-buttons">
+      <a href="systems.html" class="btn btn-primary">Explore Systems</a>
+      <a href="about.html" class="btn btn-outline">Learn More</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><h3>206</h3><p>Bones</p></div>
+      <div class="stat"><h3>600+</h3><p>Muscles</p></div>
+      <div class="stat"><h3>100K</h3><p>Heartbeats/day</p></div>
+      <div class="stat"><h3>37T</h3><p>Cells</p></div>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">Body Systems</h2>
+    <p class="section-subtitle">Click any system to explore it in detail</p>
+    <div class="grid">
+      <a href="systems/skeletal.html" class="card"><div class="card-icon">🦴</div><h3>Skeletal System</h3><p>206 bones giving structure, protection & movement.</p></a>
+      <a href="systems/muscular.html" class="card"><div class="card-icon">💪</div><h3>Muscular System</h3><p>600+ muscles enabling movement & posture.</p></a>
+      <a href="systems/nervous.html" class="card"><div class="card-icon">🧠</div><h3>Nervous System</h3><p>The body's electrical wiring & control center.</p></a>
+      <a href="systems/circulatory.html" class="card"><div class="card-icon">🩸</div><h3>Circulatory System</h3><p>Heart, blood & vessels delivering life.</p></a>
+      <a href="systems/respiratory.html" class="card"><div class="card-icon">🫁</div><h3>Respiratory System</h3><p>Oxygen in, carbon dioxide out.</p></a>
+      <a href="systems/digestive.html" class="card"><div class="card-icon">🍎</div><h3>Digestive System</h3><p>Breaking down food into energy.</p></a>
+    </div>
+    <div style="text-align:center;margin-top:2rem;">
+      <a href="systems.html" class="btn btn-primary">View All 13 Systems →</a>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-alt);">
+    <h2 class="section-title">Featured Organs</h2>
+    <div class="grid grid-4">
+      <a href="organs/heart.html" class="card card-sm"><div class="card-icon">❤</div><h3>Heart</h3></a>
+      <a href="organs/brain.html" class="card card-sm"><div class="card-icon">🧠</div><h3>Brain</h3></a>
+      <a href="organs/lungs.html" class="card card-sm"><div class="card-icon">🫁</div><h3>Lungs</h3></a>
+      <a href="organs/liver.html" class="card card-sm"><div class="card-icon">🫀</div><h3>Liver</h3></a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div><h3>🫀 Human Body Explorer</h3><p>Your complete guide to understanding the human body.</p></div>
+      <div><h4>Explore</h4><a href="systems.html">Systems</a><a href="organs.html">Organs</a><a href="health.html">Health</a></div>
+      <div><h4>Info</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="footer-bottom">© 2025 Human Body Explorer. Educational purposes only.</div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
