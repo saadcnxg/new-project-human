@@ -39,11 +39,10 @@
       <a href="systems.html" class="btn btn-primary">Explore Systems</a>
       <a href="about.html" class="btn btn-outline">Learn More</a>
     </div>
-    <div class="hero-stats">
-      <div class="stat"><h3>206</h3><p>Bones</p></div>
-      <div class="stat"><h3>600+</h3><p>Muscles</p></div>
-      <div class="stat"><h3>100K</h3><p>Heartbeats/day</p></div>
-      <div class="stat"><h3>37T</h3><p>Cells</p></div>
+    <div class="hero-game" id="pingpong">
+      <div class="pp-bar"><span>YOU <b id="ppPlayer">0</b></span><span class="pp-title">PING PONG</span><span><b id="ppCpu">0</b> CPU</span></div>
+      <canvas id="ppCanvas" width="480" height="300" aria-label="Ping pong game"></canvas>
+      <div class="pp-foot"><button type="button" class="btn btn-primary" id="ppStart">Start</button><span class="pp-hint">Mouse / touch / ↑ ↓ · first to 7</span></div>
     </div>
   </header>
 
@@ -84,5 +83,6 @@
   <script src="js/main.js"></script>
   <script src="js/navigation.js"></script>
   <script src="js/search.js"></script>
+  <script src="js/pingpong.js"></script>
 </body>
 </html>

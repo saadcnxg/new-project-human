@@ -11,7 +11,7 @@
 .hero h1,
 .hero p,
 .hero-buttons,
-.hero-stats,
+.hero-game,
 .page-header h1,
 .page-header p,
 .system-hero .emoji,
@@ -25,7 +25,7 @@
 .system-hero p { animation-delay: .12s; }
 
 .hero-buttons { animation-delay: .24s; }
-.hero-stats   { animation-delay: .36s; }
+.hero-game    { animation-delay: .36s; }
 
 .card { animation: fadeUp .7s var(--ease) both; }
 
